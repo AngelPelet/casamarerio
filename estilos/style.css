@@ -1,0 +1,86 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200;400;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background: linear-gradient(#a44332de, #A44332);
+   /*background-color: #a44332de;*/
+}
+
+#video{
+    margin-top: 20px;
+}
+
+#escritura{
+    width: 80%;
+    font-size: 26px;
+    margin: auto; 
+    text-align: justify;
+    margin-top: 50px;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1.5s;
+    transform: translateX(-100%);
+}
+
+.hidden1{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1.5s;
+    transform: translateX(100%);
+}
+
+.hidden2{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1.5s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1.5s;
+    transform: translateX(0);
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+
+#video{
+    display: flex;
+    justify-content: center;
+}
+
+.imagens{
+    margin-top: 250px;
+}
+
+.org{
+    display: flex;
+    gap: 100px;
+    margin: 30px;
+    align-items: center;
+    margin-top: 170px;
+}
+
+.esquerda, .direita{
+    width: 50%;
+}
+
+.apresentacao{
+    width: 50%;
+}

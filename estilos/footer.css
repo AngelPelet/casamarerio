@@ -1,0 +1,126 @@
+footer{
+    width: 100%;
+    color: white;
+    margin-top: 200px;
+}
+
+#footer_content{
+    background-color: rgba(0, 0, 0, 0.856);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1{
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer_link:hover{
+    opacity: 0.7;
+}
+
+#instagram{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook{
+    background-color: #4267b3;
+}
+
+#whats{
+    background-color: #25d366;
+}
+
+.footer_list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer_list .footer_link{
+    color: rgba(255, 255, 255, 0.767);
+    transition: all 0.3s;
+}
+
+.footer_list .footer_link:hover{
+    color: white;
+}
+
+#suporte{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#email, #caixa_de_texto, #nome{
+    padding: 6px;
+    outline: none;
+}
+
+#enviar{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border: 2px solid white;
+    padding: 5px;
+    margin: auto;
+    transition: all 0.4s;
+}
+
+#enviar:hover{
+    opacity: 0.7;
+}
+
+#footer_copy{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-size: 0.8rem;
+    padding: 8px;
+    font-weight: 100;
+}
+
+#whats>box-icon,
+#instagram>box-icon,
+#facebook>box-icon{
+    overflow: hidden;
+}
+
+.footer_list>li>a{
+    text-decoration: none;
+}
+
+#suporte>input{
+    font-size: 13px;
+}
+
+@media screen and (max-width: 790px) {
+    #footer_content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 506px) {
+    #footer_content{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
