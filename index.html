@@ -6,26 +6,35 @@
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
     <link rel="stylesheet" href="estilos/header.css">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/footer.css">
     <link rel="stylesheet" href="estilos/slidecond.css">
+    <link rel="stylesheet" href="estilos/media.css">
 
-    <title>Casa Marerio</title>
+    <title>Casa Mar e Rio</title>
 </head>
-<body>
+<body id="home">
     <header id="nav">
-      <div class="logo">
-        <a href="#nav">
-          <h1>CasaMarerio</h1>
+      <div>
+        <a class="logo" href="#home">
+          <h1>Casa Mar e Rio</h1>
         </a>
       </div>
+
+      <input type="checkbox" id="check">
+      <label for="check" class="icons">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <i class='bx bx-x' id="close-icon"></i>
+      </label>
+
       <div id="linksdiv">
-        <a href="#nav">Home</a>
-        <a href="#escritura">Casa</a>
+        <a href="#home">Home</a>
+        <a href="#vazio1">Casa</a>
         <a href="#condominio">Condomínio</a>
-        <a href="#contato">Contatos</a>
+        <a href="#vazio">Contato</a>
       </div>
     </header>
 
@@ -33,20 +42,22 @@
         <section id="video">
             <video width="900px" src="midias/video.mp4" loop autoplay muted controls ></video>
         </section>
-        <p id="escritura">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam veritatis asperiores quisquam, esse labore dolorem molestiae adipisci illum quis nisi vero dignissimos pariatur animi, incidunt consectetur voluptatum nihil ullam unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde at culpa ullam, iusto hic quasi nihil dolorem, minus voluptatibus provident sapiente alias nisi necessitatibus laboriosam dolores nam, eligendi incidunt. Eos?lorem</p>
+
+        <section id="vazio1">
+          <div class="invi">1 <br> <br> <br> 1</div>
+        </section>
+
+        <div id="escritura">
+          <p>Localizada no Condomínio Parque do Jacuípe, a Casa Mar e Rio é a escolha perfeita para você curtir com sua família e amigos. O Condomínio Parque do Jacuípe é um condomínio fechado, com várias quadras esportivas, campos de futebol,  campo de vôlei, praças, academia ao ar livre, trilhas e muito mais, ótimo para prática de esportes e de passeios.</p>
+          <p>Além disso, a Casa Mar e Rio está localizada a menos de 200 metros da praia, permitindo a ida a pé. A praia conta com o encontro do rio com o mar, e proporciona excelentes locais para banho e ótimas paisagens para fotos.</p>
+        </div>
         <div class="imagens">
-          <section class="org hidden1">
+          <section class="org hidden1" id="externo1">
             <section class="p-3 m-0 border-0 bd-example m-0 border-0 esquerda">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img src="midias/casa/Externo/ext1.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="midias/casa/Externo/ext2.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="midias/casa/Externo/ext3.jpg" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item">
                         <img src="midias/casa/Externo/ext4.jpg" class="d-block w-100" alt="...">
@@ -73,10 +84,7 @@
                         <img src="midias/casa/Externo/ext11.jpg" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item">
-                        <img src="midias/casa/Externo/ext12.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="midias/casa/Externo/ext13.jpg" class="d-block w-100" alt="...">
+                        <img src="midias/casa/Ambientes/amb1.jpg" class="d-block w-100" alt="...">
                       </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -93,17 +101,17 @@
               <h1>Área Externa</h1>
               <br>
               <br>
-              <br>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis minus itaque est sunt animi nostrum harum similique, nesciunt consequuntur tenetur quod aspernatur nobis deleniti impedit, molestias eaque sit assumenda! Deleniti!</p>
+              <p>A área externa conta com piscina sempre quentinha e é super equipada e confortável.</p>
+              <p>Churrasqueira elétrica, TV smart de 70 polegadas, som de qualidade, cervejeira, cooktop, chopeira, máquina de gelo e adega são  equipamentos que você encontrará na área externa.</p>
             </div>
           </section>
           <section class="org hidden">
-            <div class="apresentacao" id="externo">
+            <div class="apresentacao" id="sala-cozinha">
               <h1>Sala/Cozinha</h1>
               <br>
               <br>
               <br>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis minus itaque est sunt animi nostrum harum similique, nesciunt consequuntur tenetur quod aspernatur nobis deleniti impedit, molestias eaque sit assumenda! Deleniti!</p>
+              <p>Sala ampla com sofá-cama e tv, além de uma cozinha integrada com a área externa com geladeira de 3 portas, air fryer entre outros equipamentos.</p>
             </div>
             <section class="p-3 m-0 border-0 bd-example m-0 border-0 direita">
                 <div id="carouselExampleAutoplaying1" class="carousel slide" data-bs-ride="carousel" >
@@ -129,12 +137,6 @@
                       <div class="carousel-item">
                         <img src="midias/casa/Sala-Cozinha/sc7.jpg" class="d-block w-100" alt="...">
                       </div>
-                      <div class="carousel-item">
-                        <img src="midias/casa/Sala-Cozinha/sc8.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="midias/casa/Sala-Cozinha/sc9.jpg" class="d-block w-100" alt="...">
-                      </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -158,28 +160,52 @@
                         <img src="midias/casa/Suites-Quartos/qua2.jpg" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item">
+                        <img src="midias/casa/Sala-Cozinha/sc8.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="midias/casa/Sala-Cozinha/sc9.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
                         <img src="midias/casa/Suites-Quartos/qua4.jpg" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item">
                         <img src="midias/casa/Suites-Quartos/qua5.jpg" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item">
+                        <img src="midias/casa/Ambientes/amb5.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
                         <img src="midias/casa/Suites-Quartos/qua6.jpg" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item">
-                        <img src="midias/casa/Suites-Quartos/qua7.jpg" class="d-block w-100" alt="...">
+                        <img src="midias/casa/Suites-Quartos/qua12.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="midias/casa/Ambientes/amb6.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="midias/casa/Ambientes/amb7.jpg" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item">
                         <img src="midias/casa/Suites-Quartos/qua9.jpg" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item">
-                        <img src="midias/casa/Suites-Quartos/qua10.jpg" class="d-block w-100" alt="...">
+                        <img src="midias/casa/Suites-Quartos/qua7.jpg" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item">
                         <img src="midias/casa/Suites-Quartos/qua11.jpg" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item">
-                        <img src="midias/casa/Suites-Quartos/qua12.jpg" class="d-block w-100" alt="...">
+                        <img src="midias/casa/Suites-Quartos/qua10.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="midias/casa/Ambientes/amb2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="midias/casa/Ambientes/amb3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="midias/casa/Ambientes/amb4.jpg" class="d-block w-100" alt="...">
                       </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="prev">
@@ -192,61 +218,18 @@
                     </button>
                   </div>
             </section>
-            <div class="apresentacao" id="externo">
+            <div class="apresentacao" id="suites-quartos">
               <h1>Quartos e Suítes</h1>
               <br>
-              <br>
-              <br>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis minus itaque est sunt animi nostrum harum similique, nesciunt consequuntur tenetur quod aspernatur nobis deleniti impedit, molestias eaque sit assumenda! Deleniti!</p>
+              <p>A casa mar e rio conta com 3 suítes no primeiro andar, todas com ar condicionado e camas de casal.</p>
+              <p>No térreo, possui um quarto com o banheiro ao lado, também com ar condicionado e uma cama de casal e uma de solteiro.</p>
+              <p>Também conta com um quartinho de apoio equipado com uma beliche e um banheiro social.</p>
             </div>
-          </section>
-          <section class="org hidden">
-            <div class="apresentacao" id="externo">
-              <h1>Ambientes</h1>
-              <br>
-              <br>
-              <br>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis minus itaque est sunt animi nostrum harum similique, nesciunt consequuntur tenetur quod aspernatur nobis deleniti impedit, molestias eaque sit assumenda! Deleniti!</p>
-            </div>
-            <section class="p-3 m-0 border-0 bd-example m-0 border-0 direita">
-                <div id="carouselExampleAutoplaying3" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="midias/casa/Ambientes/amb1.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="midias/casa/Ambientes/amb2.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="midias/casa/Ambientes/amb3.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="midias/casa/Ambientes/amb4.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="midias/casa/Ambientes/amb5.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="midias/casa/Ambientes/amb6.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="midias/casa/Ambientes/amb7.jpg" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying3" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying3" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-            </section>
           </section>
         </div>
 
         <div class="gallery hidden2" id="condominio">
+          <h1 id="titulo_cond">Condomínio</h1>
           <div class="gallery-container">
             <img src="midias/condominio/cond1.jpg" alt="" class="gallery-item gallery-item-1" data-index="1">
             <img src="midias/condominio/cond2.jpg" alt="" class="gallery-item gallery-item-2" data-index="2">
@@ -258,6 +241,23 @@
           </div>
           <div class="gallery-controls"></div>
         </div>
+
+        <section id="vazio">
+          <div class="invi">1</div>
+        </section>
+
+        <section id="final">
+          <div id="wpp">
+            <p>Alugue <strong>AGORA</strong> </p>
+            <a href="https://wa.me//5575999759224?text=Tenho%20interesse%20em%20alugar%20a%20casa%20Mar%20e%20Rio." target="_blank"><button class="button-33" role="button">(75)99975-9224 <box-icon type='logo' name='whatsapp' color="#1a8842"></box-icon></button></a>
+          </div>
+          <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1376.1092461259802!2d-38.128660055719514!3d-12.698750826119962!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7164fe84d4a0855%3A0xc50e40e1090bef54!2sCondom%C3%ADnio%20Parque%20do%20Jacu%C3%ADpe!5e0!3m2!1spt-BR!2sbr!4v1706736501577!5m2!1spt-BR!2sbr" width="400" height="300" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div id="calendario">
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FFortaleza&bgcolor=%23ee6d6d&title=Casa%20Mar%20e%20Rio&showPrint=0&src=MDdiN2Q1MDNkZDUzZjA2NDdjMTM3NDYyODQwZWIwZGQ4YWIzZTQ5YzcxY2FmNTRlMzg0YjY3NTYxMTJmYmUzMUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=cHQtYnIuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%237CB342&color=%230B8043" style="border:solid 1px #777" width="370" height="300" frameborder="0" scrolling="no"></iframe>
+          </div>
+        </section>
     </main>
 
 
@@ -275,7 +275,7 @@
                     <box-icon type='logo' name='facebook' color="#ffffff"></box-icon>
                 </a>
                 
-                <a href="https://wa.me//5575999759224?text=Tenho%20interesse%20em%20um%20dos%20seus%20lotes." class="footer_link" id="whats" target="_blank">
+                <a href="https://wa.me//5575999759224?text=Tenho%20interesse%20em%20alugar%20a%20casa%20Mar%20e%20Rio." class="footer_link" id="whats" target="_blank">
                     <box-icon type='logo' name='whatsapp' color="#ffffff"></box-icon>
                 </a>
             </div>
@@ -306,7 +306,7 @@
                 <button id="enviar" type="submit">Enviar</button>
 
                 <input type="hidden" name="accessKey" value="a86f8f26-9df0-4b39-9a29-297ee2473fa6">
-                <input type="hidden" name="redirectTo" value="http://jk.lopesenterprise.com"> 
+                <input type="hidden" name="redirectTo" value="http://casamarerio.lopesenterprise.com"> 
             </form>
     </div>
     <div id="footer_copy">

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 *{
     margin: 0px;
@@ -11,8 +11,11 @@
 body{
     overflow-x: hidden;
     scroll-behavior: smooth;
-    background: linear-gradient(#a44332de, #A44332);
-   /*background-color: #a44332de;*/
+    background: linear-gradient(#aa5e50, #a33c29);
+}
+
+main{
+    padding-top: 150px;
 }
 
 #video{
@@ -25,6 +28,10 @@ body{
     margin: auto; 
     text-align: justify;
     margin-top: 50px;
+    background-color: #d3b7b2;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: justify;
 }
 
 .hidden{
@@ -75,6 +82,20 @@ section{
     margin: 30px;
     align-items: center;
     margin-top: 170px;
+    background-color: #d3b7b2;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#check{
+    display: none;
+}
+
+.icons{
+    font-size: 2.4rem;
+    cursor: pointer;
+    display: none;
+    position: absolute;
 }
 
 .esquerda, .direita{
@@ -83,4 +104,77 @@ section{
 
 .apresentacao{
     width: 50%;
+}
+
+.apresentacao>p{
+    text-indent: 3px;
+    font-size: large;
+    text-align: justify;
+}
+
+#vazio, #vazio1{
+    display: flex;
+    flex-direction: column;
+}
+
+.invi{
+    color: rgba(255, 255, 240, 0);
+}
+
+#final{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #d3b7b2b2;
+    border-radius: 15px;
+    padding: 35px;
+    margin: 150px 30px 30px 30px;
+}
+
+#calendario>iframe{
+    border-radius: 5px;
+}
+
+.button-33 {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+} 
+
+#wpp{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#wpp>p{
+    font-size: 24px;
+}
+
+#wpp>a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#wpp>a>button{
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }

@@ -52,6 +52,7 @@ footer{
     flex-direction: column;
     gap: 0.75rem;
     list-style: none;
+    padding-left: 0;
 }
 
 .footer_list .footer_link{
