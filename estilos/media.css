@@ -89,7 +89,7 @@
        }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 445px) {
     .icons{
         display: inline-flex;
         right: 5%;
@@ -222,5 +222,21 @@
         height: 150px;
         width: 280px;
     }
+
+}
+
+@media screen and (max-width: 320px) {
+    #nav>div>a>h1{
+        margin-left: 80px;
+    }
+
+    #video>video{
+        width: 300px;
+    }
+
+    #escritura{
+        width: 300px;
+    }
+
 
 }
